@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?= esc($title) ?> | Basic POS</title>
+    <title><?= esc($title) ?> | Vince Gio Acedillo TFA1</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -24,7 +24,7 @@
     </main>
 
     <footer>
-        <p>&copy; <?= date('Y') ?> Basic POS</p>
+        <p>&copy; <?= date('Y') ?> Vince Gio Acedillo &mdash; TFA1 Basic POS</p>
     </footer>
 </body>
 </html>
