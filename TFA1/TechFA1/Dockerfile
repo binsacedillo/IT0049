@@ -2,7 +2,7 @@ FROM php:8.3-apache
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends libicu-dev libonig-dev unzip \
-    && docker-php-ext-install intl mbstring \
+    && docker-php-ext-install intl mbstring mysqli \
     && a2enmod rewrite \
     && rm -rf /var/lib/apt/lists/*
 

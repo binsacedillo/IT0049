@@ -4,7 +4,7 @@
 <section>
     <p class="eyebrow">Records</p>
     <h1>Customer Accounts</h1>
-    <p class="intro">Customer records currently stored in a temporary PHP array.</p>
+    <p class="intro">Customer records retrieved from the MySQL database.</p>
 
     <div class="table-wrapper">
         <table>
