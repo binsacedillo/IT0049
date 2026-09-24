@@ -200,5 +200,13 @@ class Database extends Config
         if (ENVIRONMENT === 'testing') {
             $this->defaultGroup = 'tests';
         }
+
+        if (is_string($this->default['encrypt'])) {
+            $encrypt = json_decode($this->default['encrypt'], true);
+
+            if (is_array($encrypt)) {
+                $this->default['encrypt'] = $encrypt;
+            }
+        }
     }
 }
