@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="title">
+  <title id="title">Default user avatar</title>
+  <rect x="1" y="1" width="298" height="298" fill="white" stroke="black" stroke-width="2"/>
+  <circle cx="150" cy="105" r="55" fill="none" stroke="black" stroke-width="10"/>
+  <path d="M55 270c8-65 44-100 95-100s87 35 95 100" fill="none" stroke="black" stroke-width="10"/>
+</svg>
