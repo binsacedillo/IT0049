@@ -1,8 +1,9 @@
 FROM php:8.3-apache
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends libicu-dev libonig-dev unzip \
-    && docker-php-ext-install intl mbstring mysqli \
+    && apt-get install -y --no-install-recommends libicu-dev libonig-dev libpng-dev libjpeg62-turbo-dev libfreetype6-dev unzip \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install intl mbstring mysqli gd \
     && a2enmod rewrite \
     && rm -rf /var/lib/apt/lists/*
 
@@ -19,8 +20,9 @@ WORKDIR /var/www/html
 COPY . .
 
 RUN composer install --no-dev --prefer-dist --no-interaction --no-progress --optimize-autoloader \
-    && chown -R www-data:www-data writable \
-    && chmod -R 775 writable
+    && mkdir -p public/uploads/avatars \
+    && chown -R www-data:www-data writable public/uploads \
+    && chmod -R 775 writable public/uploads
 
 EXPOSE 10000
 
