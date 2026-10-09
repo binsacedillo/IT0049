@@ -74,10 +74,51 @@ h1 {
 }
 
 .button {
+    display: inline-block;
+    background: none;
     padding: 8px 12px;
     border: 1px solid;
     color: inherit;
+    font: inherit;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.notice,
+.validation-errors {
+    margin: 16px 0;
+    padding: 10px 12px;
+    border: 1px solid;
+}
+
+.validation-errors ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.account-form {
+    display: grid;
+    gap: 8px;
+    max-width: 600px;
+}
+
+.account-form label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.account-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid;
+    font: inherit;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 16px;
 }
 
 .table-wrapper {
@@ -99,6 +140,14 @@ td {
 
 .role {
     font-size: inherit;
+}
+
+.avatar {
+    width: 56px;
+    height: 56px;
+    display: block;
+    border: 1px solid;
+    object-fit: cover;
 }
 
 footer {

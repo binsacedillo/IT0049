@@ -26,6 +26,7 @@ CREATE TABLE users (
     username VARCHAR(50) NOT NULL UNIQUE,
     full_name VARCHAR(100) NOT NULL,
     role VARCHAR(50) NOT NULL,
+    avatar VARCHAR(255) NULL,
     created_at DATETIME NOT NULL
 );
 
