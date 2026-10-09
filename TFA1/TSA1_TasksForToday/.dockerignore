@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+*.pem
+node_modules
+vendor
+tests
+writable/cache/*
+writable/debugbar/*
+writable/logs/*
+writable/session/*
+writable/uploads/*
+php_errors.log
+phpunit.xml
+results
