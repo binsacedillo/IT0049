@@ -1,0 +1,12 @@
+{
+  "name": "tsa1-tasks-for-today",
+  "private": true,
+  "scripts": {
+    "css:build": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --minify",
+    "css:watch": "tailwindcss -i ./resources/css/app.css -o ./public/css/app.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.3.0",
+    "tailwindcss": "4.3.0"
+  }
+}

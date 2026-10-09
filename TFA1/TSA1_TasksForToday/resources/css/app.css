@@ -1,0 +1,13 @@
+@import "tailwindcss" source("../../app/Views");
+
+@theme {
+    --color-feu-green: #007A33;
+    --color-feu-gold: #F2A900;
+}
+
+@layer base {
+    :focus-visible {
+        outline: 3px solid #F2A900;
+        outline-offset: 3px;
+    }
+}
